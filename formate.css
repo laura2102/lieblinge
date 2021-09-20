@@ -1,0 +1,54 @@
+h1 {
+  color: lightblue;
+  text-align: center;
+  font-family: 'verdana', 'arial';
+  font-size: 32;
+}
+
+h2 {
+  color: black;
+  text-align: left;
+  font-family: 'verdana', 'arial';
+  font-size: 24;
+  font-weight: bold;
+}
+
+body {
+  background-color: #F8ECE0;
+  font-family: 'verdana', 'arial';
+  font-size: 20;
+}
+
+.vorlage_tabelle {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-family: 'verdana', 'arial';
+  font-size: 20;
+  background-color: lightblue;
+}
+
+.vorlage_zurueck {
+  text-align: right;
+  font-size: 18;
+}
+
+
+.naventry a {
+  text-decoration: none;
+}
+.naventry {
+  transition: all 300ms ease-in-out;
+
+}
+
+.naventry:hover {
+  color: rgb(74, 74, 218);
+  transform: scale(1.2);
+}
+
+#coverphoto {
+  width: 100%;
+  height: auto;
+}

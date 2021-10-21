@@ -7,6 +7,10 @@
   --gradient-right: #c32222;
 }
 
+html {
+  height: 100vh;
+}
+
 h1 {
   color: var(--primary-color);
   text-align: center;
@@ -94,6 +98,8 @@ label {
   background-color: var(--primary-color);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .main-form {
   display: grid;
@@ -185,6 +191,12 @@ label {
   display: flex;
   justify-content: space-evenly;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-container {
+      flex-direction: column;
+  }
 }
 
 .card {

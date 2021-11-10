@@ -41,6 +41,7 @@ h3 {
 body {
   background: rgb(253,156,45);
   background: linear-gradient(135deg, rgba(253,156,45,1) 11%, rgba(195,34,34,1) 81%);
+  background-attachment: fixed;
   font-family: 'verdana';
   font-size: 20;
 }
@@ -50,9 +51,29 @@ p {
 }
 
 .go-back {
-  text-align: right;
-  font-size: 18;
-  color: var(--primary-color);
+  font-family: verdana;
+  color: var(--secondary-color);
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  width: 10%;
+  border-radius: 3px;
+  cursor: pointer;
+  background: var(--primary-color);
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-back:hover {
+  color: var(--secondary-color);
+  transform: scale(1.07);
+  transition: all 300ms ease-in-out;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .naventry a {
@@ -99,7 +120,17 @@ label {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-
+.center-view {
+  padding: 3rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 .main-form {
   display: grid;
@@ -136,6 +167,25 @@ label {
   outline-color: var(--highlight-color);
 }
 
+.data-design {
+  color: var(--secondary-color);
+}
+
+.grey-box {
+  width: 100%;
+  height: 1.5rem;
+  font-size: 17px;
+  font-family: 'verdana';
+  border: none;
+  display: flex;
+  align-items: center;
+  box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--tertiary-color);
+  outline-color: var(--highlight-color);
+  padding: 0.3rem;
+  border-radius: 3px;
+}
+
 .free-text {
   width: 100%;
   height: 8rem;
@@ -168,7 +218,6 @@ label {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   width: 30%;
   border-radius: 3px;
-  margin-top: 2rem;
   cursor: pointer;
   background: var(--gradient-left);
   background: linear-gradient(90deg, rgba(252, 176, 69,1) 0%, rgba(253,29,29,1) 100%);
@@ -179,8 +228,6 @@ label {
 }
 
 .save-entry:hover {
-  background: var(--gradient-left);
-  background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
   color: var(--primary-color);
   transform: scale(1.07);
   transition: all 300ms ease-in-out;
@@ -248,4 +295,19 @@ label {
 .icon-hobby {
   -webkit-mask-image: url(/images/streamline-icon-travel-places-beach@40x40.svg);
   mask-image: url(/images/streamline-icon-travel-places-beach@40x40.svg);
+}
+
+.friendship-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.add-entry-link {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 1rem;
+  font-size: 3rem;
+  align-items: center;
 }
